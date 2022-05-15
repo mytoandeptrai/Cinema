@@ -1,0 +1,30 @@
+.cast {
+    &__title {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    &__container {
+    }
+    &-item {
+        &__container {
+            img {
+                margin-top: 0;
+                padding-top: 0;
+                border-radius: 10px;
+                height: auto;
+            }
+        }
+        &__name {
+            color: #fff;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        &__character {
+            color: #f1c40f;
+            font-size: 12px;
+        }
+    }
+}

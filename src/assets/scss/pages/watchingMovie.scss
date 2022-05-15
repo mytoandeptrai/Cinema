@@ -1,0 +1,123 @@
+.watching {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        animation: fadeIn 0.5s linear;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        margin-bottom: 40px;
+        &-tv {
+            margin-bottom: 0;
+        }
+    }
+    &__wrap {
+        width: 75%;
+        &-movie {
+            aspect-ratio: 16/9;
+        }
+        &-tv {
+            width: 100%;
+        }
+    }
+    &__info {
+        &-name {
+            color: #fff;
+            margin: 20px 0;
+            font-size: 30px;
+            font-weight: 400;
+        }
+        &-overview {
+            color: #fff;
+        }
+        &-releaseDate {
+            color: #fff;
+            margin: 20px 0;
+        }
+        &-tv {
+            width: 100%;
+        }
+        &-seasonNumber {
+        }
+    }
+    &__season {
+        width: 22%;
+        height: 506px;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        &-heading {
+            font-weight: 400;
+            font-size: 15px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        &-tv {
+        }
+        &-link {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            cursor: pointer;
+            align-items: center;
+        }
+        &-img {
+            height: 100%;
+            width: 100%;
+            padding-top: 0;
+            margin-top: 0;
+            img {
+                border-top-right-radius: 8px;
+                border-top-left-radius: 8px;
+            }
+        }
+        &-info {
+            width: 100%;
+            background-color: #fff;
+            padding: 10px 5px;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transform: translateY(-3px);
+        }
+        &-name,
+        &-espCount {
+            color: #333;
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+    &__episode {
+        &-list {
+            transition: height linear 1s;
+        }
+        &-item {
+            background-color: #222;
+            border-radius: 8px;
+            overflow: hidden;
+            display: block;
+            height: 80px;
+            margin-bottom: 10px;
+            width: 100%;
+            color: #fff;
+        }
+        &-content {
+            display: flex;
+            height: 100%;
+        }
+        &-img {
+            width: 50%;
+        }
+        &-name {
+            height: 100%;
+            padding: 5px 10px;
+            width: 50%;
+        }
+    }
+    &__similarMovie {
+        width: 20%;
+    }
+}
