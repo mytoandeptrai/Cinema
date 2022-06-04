@@ -82,6 +82,7 @@ export interface IUser {
     photoURL: string;
     displayName: string;
     email: string;
+    uid?: string;
 }
 
 export interface IGenre {
@@ -102,4 +103,11 @@ export interface ICast {
     original_name: string;
     popularity: number;
     profile_path: string;
+}
+
+export interface IUserResponse {
+    operationType: string;
+    providerId: string;
+    user: any;
+    _tokenResponse: any;
 }

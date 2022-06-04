@@ -6,19 +6,21 @@ export interface UserSlice {
     setUser: (user: any) => void;
 }
 
+const initialState = {
+    displayName: '',
+    email: '',
+    photoURL: '',
+};
+
 const createUserSlice: StoreSlice<UserSlice> = (set, get) => ({
-    user: {
-        displayName: 'Nhung',
-        email: 'nhung@gmail.com',
-        photoURL: '',
-    },
+    user: initialState,
     setUser: (newUser: any) =>
         set((state: any) => {
             return {
                 ...state,
                 user: newUser,
             };
-        }),
+        }, false),
 });
 
 export default createUserSlice;

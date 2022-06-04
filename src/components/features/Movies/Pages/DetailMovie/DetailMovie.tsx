@@ -6,6 +6,7 @@ import { movieConst } from '../../../../../constants/commonConstants';
 import { ICast, IDetailMovie, IGenre } from '../../../../../interfaces/types';
 import Title from '../../../../global/Title/Title';
 import Button from '../../../../shared/buttons/Button';
+import FavoriteButton from '../../../../shared/buttons/FavoriteButton/FavoriteButton';
 import SliderMovies from '../../../Home/components/SliderMovies/SliderMovies';
 import Cast from '../../Components/Cast/Cast';
 import ModalTrailer from '../../Components/ModalTrailer/ModalTrailer';
@@ -129,7 +130,12 @@ export default function DetailMovie(props: IDetailMovieProps) {
                                 >
                                     Watch Trailer
                                 </span>
-                                <span className='movie__detail-link'>Add to Favorite</span>
+                                <FavoriteButton
+                                    className='movie__detail-link'
+                                    movie={movie}
+                                    media_type={media_type}
+                                />
+                                {/* <span className='movie__detail-link' onClick={() => handleAddToFavorite}>Add to Favorite</span> */}
                             </div>
                         </div>
                     </div>

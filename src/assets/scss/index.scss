@@ -1,4 +1,6 @@
 @import './global/index.scss';
+
+/** Components */
 @import './components/header.scss';
 @import './components/banner.scss';
 @import './components/slider.scss';
@@ -7,5 +9,9 @@
 @import './components/similarMovie.scss';
 @import './components/modalTrailer.scss';
 @import './components/movieItem.scss';
+@import './components/loading.scss';
+
+/** Page */
 @import './pages/detailMovie.scss';
 @import './pages/watchingMovie.scss';
+@import './pages/loginPage.scss';
